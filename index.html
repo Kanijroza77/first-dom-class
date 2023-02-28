@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom start</title>
+</head>
+<body> 
+    <header>
+    <h1>Our blog website</h1>
+    </header>
+
+<section id="section -id">
+        <article class="blog">
+            <h3>this is blog 1</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+        <article class="blog">
+            <h3 id="second-title">this is blog 2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+        <article class="blog">
+            <h3>this is blog 3</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+        <article class="blog">
+            <h3>this is blog 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+
+        <article class="">
+            <h3>this is blog 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+
+        <article class="">
+            <h3>this is blog 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+
+        <article class="">
+            <h3>this is blog 4</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!</p>
+        </article>
+
+        <article class="blog">
+            <ul id="blog-ul">
+                <li>number-1</li>    
+                <li>number-2</li> 
+                <li>number-3</li> 
+                <li>number-4</li> 
+            </ul>
+
+
+
+
+        </article>
+
+
+
+
+</section>
+
+
+
+
+<script>
+//   console.log(document.body)
+    //  Object bihavior
+// const name={id:13,age:24,address:"narayanjanj"} //
+// const r=name.address;
+// console.log(r);
+
+// const blogTitles= document.getElementsByTagName('h3')
+// console.log(blogTitles);
+// for(const title of blogTitles ){
+// console.log(title.innerText);
+// }
+
+// const paras=document.getElementsByTagName('p')
+// console.log(paras);
+// for(const pera of paras ){
+// console.log(pera.innerText);
+// }
+
+
+const secondTitle= document.getElementById('second-title');
+// console.log(secondTitle);
+secondTitle.innerText ='This is my changing blog';
+secondTitle.style.color ='green';
+secondTitle.style.padding ='10px'
+secondTitle.style.margin ='10px'
+secondTitle.style.border ='10px'
+secondTitle.style.borderRadius ='10px'
+secondTitle.style.backgroundColor ='yellow'
+
+
+ const blogs= document.getElementsByClassName('blog');
+console.log(blogs);
+for(const blog of blogs){
+// console.log(blog);
+blog.style.border ='2px solid blue';
+blog.style.margin ='20px';
+blog.style.padding ='20px';
+blog.style.borderRadius='5px'
+
+}
+
+
+  const blogparas=document.querySelectorAll('.blog p')
+    for (const blogpara of blogparas){
+ blogpara.style.color ='green' 
+    }
+
+const li= document.createElement('li');
+li.innerText ='text added with js';
+// console.log(li);
+
+ const ul=document.getElementById('blog-ul')
+// console.log(ul);
+ul.appendChild(li)
+
+
+
+const h3 = document.createElement('h3');
+h3.innerText ='Last blog by kanij roza'
+const p =document.createElement('p');
+p.innerText ='Eshikhon n-224 ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perferendis deleniti sed magnam corrupti dolorem eos obcaecati reprehenderit provident dolore'
+
+const article= document.createElement('article');
+article.classList.add('blog');
+article.appendChild(h3);
+article.append(p);
+
+ const section= document.getElementById('section -id');
+section.appendChild(article);
+
+
+
+</script>
+
+<!-- <script src="app.js"></script> -->
+
+
+</body>
+</html>
